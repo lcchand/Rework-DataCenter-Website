@@ -1,0 +1,16 @@
+/*-------------------------------*/
+/*   sb-systems.scss                */
+/*-------------------------------*/
+@import './base/_variables.scss';
+
+
+// Color Variables for System Sidebar
+
+$Support-Color         : $System-Color;
+$Support-Color-Md      : $System-Color-Md;
+$Support-Color-Lt      : $System-Color-Lt;
+
+// Have to import _new-sidebar.scss for Sass to redefine the colors
+// I know, not DRY. Quick hack until I write Javascript to Alter CSS Variables
+
+@import './widgets/_new-sidebar.scss';

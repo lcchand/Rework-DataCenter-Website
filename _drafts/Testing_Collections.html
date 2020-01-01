@@ -1,0 +1,40 @@
+---
+title: Testing Collections for a Systems Page
+layout: systems
+---
+
+<section>
+  <h2>{{ page.title }}</h2>
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Issue</label>
+  
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Support</label>
+  
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Reference</label>
+
+  <!-- content1 - belongs to tab1 -->
+  <section id="content1">
+    <h3 id="application">Application</h3>
+    
+    {{ systems.issues }}
+
+  </section>
+
+  <!-- content2 - belongs to tab2 -->
+  <section id="content2">
+
+    {{ systems.support }}
+ 
+  </section>
+  
+  <!-- content3 - belongs to tab3 -->
+  <section id="content3">
+
+    {{ systems.reference }}
+
+  </section>
+  
+</section>
+<!-- Footer will follow -->

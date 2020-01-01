@@ -1,0 +1,113 @@
+
+/*-------------------------------*/
+/*   _sidebar.scss               */
+/*-------------------------------*/
+
+
+aside {
+    display: none;
+    flex-shrink: 0;
+    margin-top: 6.5em;
+    margin-bottom: 2em;
+    width: 100%;
+    background-color: $Support-Color-Lt;
+
+    
+    @media #{$brk-tablet} {
+        margin-top: 5em;
+        margin-bottom: 0;
+        display: block;
+        width: 300px;
+
+    }
+
+    @media #{$brk-max} {
+	// margin: $margin-max;
+    }
+}
+
+
+aside h3 {
+    padding: .5em 0 .5em .5em;
+}
+
+aside a {
+    color: $Body-Text-Color;
+    width: 100%;
+}
+
+
+
+button.accordion-sidebar {
+    width: 100%;
+    color: $Body-Text-Color;
+    background-color: $Support-Color-Md;
+    border: none;
+    border-top: 1px solid $White;
+    border-bottom: 1px solid $White;
+    outline: none;
+    text-align: left;
+    padding: .5em .5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+
+button.accordion-sidebar:after {
+    content: '\f055';
+    font-family: "fontawesome";
+    font-size: 14px;
+    float: right;
+}
+
+button.accordion-sidebar.is-open:after {
+    content: '\f056';
+}
+
+button.accordion-sidebar:hover, button.accordion-sidebar.is-open {
+    background-color: $Support-Color;
+
+}
+
+
+
+.accordion-sb-content {
+    background-color: $White;
+    border-left: 1px solid $Support-Color-Md;
+    border-right: 1px solid $Support-Color-Md;
+    padding: 0 0 0 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+
+
+.accordion-sb-content ul {
+    padding-bottom: 1em;
+}
+
+.accordion-sb-content ul>li {
+    line-height: 2;
+    border-bottom: 1px dotted $Frame-Color-Md;
+}
+
+
+
+.accordion-sb-content ul>li:hover,
+.accordion-sb-content ul>li:focus {
+    background-color: $Support-Color-Lt;
+}
+
+
+.sidebar {
+    display: none;
+    
+    @media #{$brk-tablet} {
+        display: block;
+    }
+    
+}
+
+

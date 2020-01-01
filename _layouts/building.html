@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include building_header.html %}
+
+    <main>
+
+      {% include building_sidebar.html %}
+
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+    {% include load_scripts.html %}
+
+  </body>
+</html>

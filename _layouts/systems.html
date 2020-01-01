@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="../css/application.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Sentara Computer Operations - Systems</title>
+
+  </head>
+
+  <body>
+
+    {% include systems_header.html %}
+
+    <main>
+
+      {% include systems_sidebar.html %}
+
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+    <script src="../js/accordion-sidebar.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/switchtheme.js"></script>
+  </body>
+</html>

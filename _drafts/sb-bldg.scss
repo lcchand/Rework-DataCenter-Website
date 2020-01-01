@@ -1,0 +1,16 @@
+/*-------------------------------*/
+/*   sb-bldg.scss                */
+/*-------------------------------*/
+@import './base/_variables.scss';
+
+
+// Color Variables for Bldg Sidebar
+
+$Support-Color         : $Bldg-Color;
+$Support-Color         : $Bldg-Color-Dk;
+$Support-Color-Md      : $Bldg-Color-Md;
+$Support-Color-Lt      : $Bldg-Color-Lt;
+
+// Have to import _new-sidebar.scss for Sass to redefine the colors
+
+@import './widgets/_new-sidebar.scss';

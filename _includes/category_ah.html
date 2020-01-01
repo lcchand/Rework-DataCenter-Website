@@ -1,0 +1,28 @@
+<!-- Paging for After Hours  -->
+<section id="content_ah">
+
+  <table>
+    <thead>
+      <tr>
+	<th>Service Now Group</th>
+	<th>ID</th>
+	<th>AMCOM Group</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+	<td colspan="3">{{ page.support_date }}</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      {% for ahsupport in page.ah_support %}
+      <tr>
+        <td>{{ ahsupport.snow_group }}</td>
+        <td>{{ ahsupport.id }}</td>
+        <td>{{ ahsupport.amcom }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+<!-- End of Paging for After Hours -->

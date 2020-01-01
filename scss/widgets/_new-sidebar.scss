@@ -1,0 +1,175 @@
+
+/*-------------------------------*/
+/*   _new-sidebar.scss           */
+/*-------------------------------*/
+
+
+ 
+   
+/* Sidebar Element, H3 Text, ahref */
+
+aside {
+    display: none;
+    flex-shrink: 0;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    width: 100%;
+    transition: all .3s;
+
+    
+    @media #{$brk-tablet} {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+        display: block;
+        width: 300px;
+	transition: all .3s;
+
+    }
+
+    @media #{$brk-max} {
+	// margin: $margin-max;
+    }
+
+    //Aside - Background Colors for each 3 Categories 
+    &.as-bg-color-bldg {
+	background-color: $Bldg-Color-Md;
+    }
+
+    &.as-bg-color-support {
+	background-color: $Support-Color-Lt;
+        border: 2px solid $Support-Color;
+    }
+    
+    &.as-bg-color-system {
+	background-color: $System-Color-Lt;
+    }  
+    
+
+
+    h3 {
+	padding: .5em 0 .5em .5em;
+    }
+
+    a {
+	color: $Body-Text-Color;
+	width: 100%;
+    }
+    
+    svg {
+        width: 82px;
+        fill: $White;
+        padding: 0 .5em .25em 0;
+        float: right;
+    }
+}
+
+.aside-mobile-show {
+  display: block;
+  flex-shrink: 0;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  width: 100%;
+  transition: all .3s;
+}  
+
+/* Don't think these are bebing used
+  .aside-title-bldg,
+  .aside-title-support,
+  .aside-title-system {
+    text-align: center;
+    letter-spacing: 13px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: semi-bold;
+  }
+
+  .aside-title-bldg {
+    color: $Bldg-Color;
+  }
+
+  .aside-title-support {
+    color: $Support-Color;
+  }
+
+  .aside-title-system {
+    color: $System-Color;
+  }
+*/
+
+
+  /* Accordion Sidebar     */
+
+  button.accordion-sidebar {
+    width: 100%;
+    color: $Body-Text-Color;
+    background-color: $Support-Color-Md;
+    border: none;
+    border-top: 1px solid $White;
+    border-bottom: 1px solid $White;
+    outline: none;
+    text-align: left;
+    padding: .5em .5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+
+
+    &:after {
+      content: '\f055';
+      font-family: "fontawesome";
+      font-size: 14px;
+      float: right;
+    }
+
+
+    &.is-open:after {
+      content: '\f056';
+    }
+
+
+    &:hover,
+    &.is-open {
+      background-color: $Support-Color;
+      color: $White;
+    }   
+    
+  }
+
+
+  // Turn off Top White Border for 1st button
+  button.accordion-sidebar:nth-of-type(1n) {
+    border-top: none;
+  }
+
+
+
+  /* Accordion Content       */
+  .accordion-sb-content {
+    background-color: $White;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+
+
+    ul {
+      padding: 0;
+
+
+      &>li {
+	line-height: 2;
+	border-bottom: 1px dotted $Frame-Color-Md;
+	padding-left: 1em;
+
+	&:last-child {
+	  border-bottom: 2px solid $Support-Color-Md;
+	}
+
+	&:hover,
+	&:focus {
+	  background-color: $Support-Color-Lt;
+	}
+      }
+    }
+  }
+

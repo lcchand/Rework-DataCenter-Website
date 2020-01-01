@@ -1,0 +1,10 @@
+name: My Jekyll Website
+
+# Build Settings - use folder 'scss' for 'sass' partial files to create final 'css' file
+sass:
+  sass_dir: scss
+  style: expanded
+# Collections - Take all collections settings out until I figure it out
+collections:
+  systems:
+    output: true

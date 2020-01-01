@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  
+  <body>
+
+    {% include support_header.html %}
+
+    <main>
+
+      {% include support_sidebar.html %}
+
+      <section>
+	{% include category_1-ah.html %}
+	
+	<section id="content1">
+
+	  {{ content }}
+
+	</section>
+	<!-- End of Issue content -->
+
+
+	{% include category_2.html %}
+
+	{% include category_ah.html %}
+
+	{% include category_3.html %}
+
+      </section>
+
+    </main>
+
+    {% include footer.html %}
+
+    {% include load_scripts.html %}
+    
+  </body>
+</html>
