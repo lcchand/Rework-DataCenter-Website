@@ -26,22 +26,26 @@ aside {
 
     }
 
+    @media #{$brk-max} {
+	// margin: $margin-max;
+    }
 
     //Aside - Background Colors for each 3 Categories 
-    &.aside-bgcolor--bldg {
+    &.as-bg-color-bldg {
 	background-color: var(--Theme-Color-Md);
     }
 
-    &.aside-bgcolor--support {
+    &.as-bg-color-support {
 	background-color: var(--Theme-Color-Lt);
         border: 2px solid var(--Theme-Color);
     }
     
-    &.aside-bgcolor--system {
+    &.as-bg-color-system {
 	background-color: var(--Theme-Color-Lt);
-	border: 2px solid var(--Theme-Color);
     }  
     
+
+
     h3 {
 	padding: .5em 0 .5em .5em;
     }
@@ -50,18 +54,16 @@ aside {
 	color: $Body-Text-Color;
 	width: 100%;
     }
-
-    /*
+    
     svg {
         width: 82px;
         fill: $White;
         padding: 0 .5em .25em 0;
         float: right;
     }
-    */
 }
 
-.aside-mobile--show {
+.aside-mobile-show {
     display: block;
     flex-shrink: 0;
     margin-top: 0.5em;

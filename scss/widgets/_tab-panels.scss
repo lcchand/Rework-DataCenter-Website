@@ -76,8 +76,7 @@ section#content3,
 section#content4,
 section#content_ah {
   display: none;
-  padding-top: 1em;
-  padding: 10px;
+  padding: 1em 10px 10px 10px;
   margin-top: 0;
   border: 1px solid #ddd;
 }
@@ -92,7 +91,7 @@ section#content_ah {
 }
 
 section#content1 h4 {
-  font-weight: semi-bold;
+    font-weight: normal;
 }
 
 
@@ -106,32 +105,6 @@ section#content_ah li {
 }
 
 
-/* No Hover Candidates for "ol li" yet
-section#content1 li:hover:after,
-section#content2 li:hover:after,
-section#content3 li:hover:after,
-section#content4 li:hover:after {
-    //cursor: pointer;
-    //font-family: fontawesome;
-    //font-weight: $OpenSans-weight-semibold;
-    //content: '\f104';
-    //color: $Frame-Color-Text;
-   // margin-left: 1em;
-    transition: 0.5s ease-in linear;
-    // text-decoration: underline;
-    // border-left: 1px solid orange;
-}
-*/
-
-/* Debating whether it helps
-section#content1 li:hover,
-section#content2 li:hover,
-section#content3 li:hover,
-section#content4 li:hover {
-    color: $Frame-Color-Md;
-    transition: 0.5s ease-in linear;
-}
-*/
 
 section#content1 ol,
 section#content2 ol,

@@ -5,7 +5,7 @@
 
 
 
-.accordion_button {
+button.accordion-sidebar {
     width: 100%;
     color: $Body-Text-Color;
     background-color: var(--Theme-Color-Md);
@@ -19,15 +19,15 @@
     cursor: pointer;
     transition: background-color 0.2s linear;
 
-    // Plus Sign
+
     &:after {
 	content: '\f055';
 	font-family: "fontawesome";
 	font-size: 14px;
 	float: right;
     }
-    
-    // Minus Sign
+
+
     &.is-open:after {
 	content: '\f056';
     }
@@ -37,27 +37,29 @@
     &.is-open {
 	background-color: var(--Theme-Color);
 	color: $White;
-    }      
+    }   
+    
 }
 
 
-
 // Turn off Top White Border for 1st button
-.accordion_button:nth-of-type(1n) {
+button.accordion-sidebar:nth-of-type(1n) {
     border-top: none;
 }
 
 
 
-// Accordion Content (div, ul, li)
-.accordion_div_content {
+/* Accordion Content       */
+.accordion-sb-content {
     background-color: $White;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
 
+
     ul {
 	padding: 0;
+
 
 	&>li {
 	    line-height: 2;
@@ -72,6 +74,8 @@
 	    &:focus {
 		background-color: var(--Theme-Color-Lt);
 	    }
-	}	
+	}
+
+	
     }
 }

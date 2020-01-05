@@ -8,8 +8,8 @@ accordion-sidebar.js
 */
 
 
-// Select all the <button class="accordion-sidebar"> within the aside
-var accordionsSidebar = document.getElementsByClassName("accordion-sidebar");
+// Select all the <button class="accordion_button"> within the aside
+var accordionsSidebar = document.getElementsByClassName("accordion_button");
 // Select <aside id="sidebar">
 var sideBar = document.getElementById("sidebar");
 // Select all anchor elements within <aside id="sidebar">
@@ -25,7 +25,7 @@ Toggles - Upon "clicking" button.accordion-sidebar", Child Element
 */
 for (var i = 0; i < accordionsSidebar.length; i++) {
   accordionsSidebar[i].onclick = function() {
-    this.classList.toggle('is-open');
+      this.classList.toggle('is-open');
 
     var content = this.nextElementSibling;
     if (content.style.maxHeight) {
