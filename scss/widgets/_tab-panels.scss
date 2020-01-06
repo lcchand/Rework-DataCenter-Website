@@ -2,7 +2,24 @@
 /*   _tab-panels.scss            */
 /*-------------------------------*/
 
+/* 
+Tab Panels & Sections:
+---------------------
+Original content is in Markdown and is parsed by 
+Static Site Generator.
 
+Therefore: CSS Attribute, Child, Adjacent and 
+General Sibling Selectors are used instead of
+a BEM naming convention.
+
+Tabs: (Use the "Input Check Box Hack" to hide/show content)
+Original example: https://codepen.io/oknoblich/pen/tfjFl (no longerin codepen)
+Similar example: https://codepen.io/BrandonBento/pen/MGmZyq
+*/
+
+
+
+/* Input Check Boxes & Labels */
 input {
     display: none;
 }
@@ -44,6 +61,27 @@ input:checked + label {
 }
 
 
+
+/* Mobile Screen - Hide Label Text / Display Icons */
+@media screen and (max-width: 650px) {
+    label {
+	font-size: 0;
+    }
+    label:before {
+	margin: 0;
+	font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    label {
+	padding: 15px;
+    }
+}
+
+
+
+/* Sections & Headings */
 section h2 {
   padding: .5em .5em .75em .5em;
   margin-bottom: .5em;
@@ -96,6 +134,7 @@ section#content1 h4 {
 
 
 
+/* Ordered List Items */
 section#content1 li,
 section#content2 li,
 section#content3 li,
@@ -115,19 +154,3 @@ section#content_ah ol {
 }
 
 
-
-@media screen and (max-width: 650px) {
-    label {
-	font-size: 0;
-    }
-    label:before {
-	margin: 0;
-	font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    label {
-	padding: 15px;
-    }
-}

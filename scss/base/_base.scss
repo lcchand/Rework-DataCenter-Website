@@ -18,6 +18,7 @@ html, body {
 
 html {
     background: $White;
+    scroll-behavior: smooth;
 }
 
 @import url($font-url--OpenSans);
