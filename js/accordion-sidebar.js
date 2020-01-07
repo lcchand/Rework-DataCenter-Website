@@ -19,7 +19,7 @@ var sidebarHrefs = sideBar.getElementsByTagName('a');
 
 /* 
 =========================================================================
-Toggles - Upon "clicking" button.accordion-sidebar", Child Element
+1. Toggles - Upon "clicking" button.accordion-sidebar", Child Element
  Div with UL/LI = Open/Close with Accordion Effect
 =========================================================================
 */
@@ -35,14 +35,14 @@ for (var i = 0; i < accordionsSidebar.length; i++) {
       // accordion is currently closed, so open it
       content.style.maxHeight = content.scrollHeight + "px";
     }
-  }
+  };
 }
 
 
 
 /* 
 =========================================================================
-Clicking any of the child anchor elements within the <aside id="sidebar">
+2. Clicking any of the child anchor elements within the <aside id="sidebar">
 sets the <input id="tab1" type="radio" name="tabs" > 
 to "checked" which sets <section id="content1"> display: block
 =========================================================================
@@ -50,5 +50,5 @@ to "checked" which sets <section id="content1"> display: block
 for (var j = 0; j < sidebarHrefs.length; j++) {
     sidebarHrefs[j].onclick = function() {
 	document.getElementById("tab1").checked = true;
-    }
+    };
 }
