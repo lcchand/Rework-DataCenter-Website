@@ -9,7 +9,7 @@ title: NOC WAN
 #
 #
 # Layout that Jekyll will use for this page
-layout: systems_category-DEV
+layout: systems_category
 # category-3-Systems.html is used for Reference
 #
 #

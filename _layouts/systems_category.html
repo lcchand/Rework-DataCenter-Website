@@ -1,13 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link href="../css/application.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Sentara Computer Operations - {{ page.title }}</title>
-
-  </head>
-
+  {% include head.html %}
+ 
   <body>
 
     {% include systems_header.html %}
@@ -16,16 +10,32 @@
 
       {% include systems_sidebar.html %}
 
-      {{ content }}
+      <section>
+	{% include category_1.html %}
+	
+	<section id="content1">
+
+	  {{ content }}
+
+	</section>
+	<!-- End of Issue content -->
+
+
+      {% include category_2.html %}
+
+      {% include category_3-Systems.html %}
+
+      </section>
+
+      <!-- New Top Button -->
+      {% include gotop_button.html %}
+      <!-- End of New Top Button -->
 
     </main>
 
     {% include footer.html %}
 
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	 <script src="../js/accordion.js"></script> -->
-    <script src="../js/accordion-sidebar.js"></script>
-    <script src="../js/hamburger.js"></script>
-    <script src="../js/switchtheme.js"></script>
+    {% include load_scripts.html %}
+    
   </body>
 </html>

@@ -9,7 +9,7 @@ title: Check Sealer
 #
 #
 # Layout that Jekyll will use for this page
-layout: building_category-DEV
+layout: building_category
 # category-3-Building.html is used for Reference
 #
 #
