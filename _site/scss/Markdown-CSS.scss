@@ -1,0 +1,11 @@
+/* Bldg, Support, Systems - Markdown CSS */
+
+@import 'base/_variables';
+@import 'base/_base';
+@import 'layout/_table';
+@import 'widgets/_tab-panels';
+
+/* Add some whitespace for previewing Markdown drafts */
+body {
+    padding: 10px;
+}
