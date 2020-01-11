@@ -36,11 +36,6 @@ html {
   --Bldg-Color: #f9b22f;
   --Bldg-Color-Md: #fac461;
   --Bldg-Color-Lt: #fde9c4;
-  /* Old Bldg Colors
-    --Bldg-Color-Dk: #f5b533;
-    --Bldg-Color-Md: #ffd62a;
-    --Bldg-Color-Lt: #fff9c4;
-  */
   --Support-Color-Dk: #83BC7D;
   --Support-Color: #83BC7D;
   --Support-Color-Md: #bdd7b1;
@@ -166,18 +161,6 @@ section {
   }
 }
 
-/* Testing - Sticky Postioning for 3 Tabs (Issue, Support, Reference)
-Numerous Issues:
-- No "background" color - can see other content behind "tabs"" when scrolling
-- Inactive Tabs lose "Bottom Border"
-- #ID Link Position - covered by Tabs when selected from Sidebar (CSS or JS solution?)
-
-label {
-    position: sticky;
-    top: 10px;
-    background: white;
-}
-/* Testing */
 /* Home Page Exceptions */
 .section--homepage,
 .section--light,
@@ -854,6 +837,11 @@ aside a {
   color: #F3F3F3;
   text-align: center;
   line-height: 3em;
+}
+@media (min-width: 768px) {
+  .go--top {
+    bottom: 145px;
+  }
 }
 
 .go--top span:after {

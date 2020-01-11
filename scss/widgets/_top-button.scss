@@ -16,6 +16,10 @@
     color: $Frame-Color-Lt;
     text-align: center;
     line-height: 3em;
+    
+    @media #{$brk-tablet} {
+	bottom: 145px;
+    }
 }
 
 .go--top span:after {

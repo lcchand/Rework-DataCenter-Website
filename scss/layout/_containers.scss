@@ -42,23 +42,7 @@ section {
         padding-left: 20px;
     }
 
-    @media #{$brk-max} {
-	//margin: $margin-max;
-    }
 }
-
-/* Testing - Sticky Postioning for 3 Tabs (Issue, Support, Reference)
-Numerous Issues:
-- No "background" color - can see other content behind "tabs"" when scrolling
-- Inactive Tabs lose "Bottom Border"
-- #ID Link Position - covered by Tabs when selected from Sidebar (CSS or JS solution?)
-
-label {
-    position: sticky;
-    top: 10px;
-    background: white;
-}
-/* Testing */
 
 
 
